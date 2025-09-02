@@ -1,0 +1,1 @@
+// script.js - pronto para interações mais complexas
