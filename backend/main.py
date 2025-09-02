@@ -1,6 +1,7 @@
 
 from fastapi import FastAPI, UploadFile, Form
 from fastapi.responses import FileResponse, PlainTextResponse
+from fastapi.staticfiles import StaticFiles
 import shutil
 import subprocess
 import os
@@ -33,3 +34,9 @@ async def download_csv():
     if os.path.exists(CSV_OUTPUT):
         return FileResponse(CSV_OUTPUT, filename="produtos_saida.csv")
     return PlainTextResponse("Nenhum arquivo de saída encontrado.")
+
+
+
+# Servir a pasta frontend como estática
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+
