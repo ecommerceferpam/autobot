@@ -8,7 +8,7 @@ import re
 import sys
 
 # === CONFIGURAÇÕES ===
-API_KEY = ""  # será definida dinamicamente via interface
+API_KEY = "AIzaSyBUulcoQl_J7uE2GzpU-AIZo7d-LEZDKZI"  # será definida dinamicamente via interface
 CSV_INPUT = "produtos.csv"
 CSV_OUTPUT = "produtos_saida.csv"
 LOG_FILE = "processo.log"
